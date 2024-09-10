@@ -1,24 +1,31 @@
-Linux-Process-API-fork-wait-exec-
+# Linux-Process-API-fork-wait-exec-
 Ex02-Linux Process API-fork(), wait(), exec()
-
-Ex02-OS-Linux-Process API - fork(), wait(), exec()
+# Ex02-OS-Linux-Process API - fork(), wait(), exec()
 Operating systems Lab exercise
 
-AIM:
+
+# AIM:
 To write C Program that uses Linux Process API - fork(), wait(), exec()
 
-DESIGN STEPS:
-Step 1:
+# DESIGN STEPS:
+
+### Step 1:
+
 Navigate to any Linux environment installed on the system or installed inside a virtual environment like virtual box/vmware or online linux JSLinux (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) or docker.
 
-Step 2:
+### Step 2:
+
 Write the C Program using Linux Process API - fork(), wait(), exec()
 
-Step 3:
-Test the C Program for the desired output.
+### Step 3:
 
-PROGRAM:
-C Program to print process ID and parent Process ID using Linux API system calls
+Test the C Program for the desired output. 
+
+# PROGRAM:
+
+## C Program to print process ID and parent Process ID using Linux API system calls
+
+```
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -37,12 +44,15 @@ int main(void)
 	printf("The process id: %d\n",process_id);
 	printf("The process id of parent function: %d\n",p_process_id);
 	return 0; }
+```
+
 OUTPUT:
 
-image
+![image](https://github.com/user-attachments/assets/d2148328-b276-4b2e-b548-77ddd5853342)
 
 C Program to create new process using Linux API system calls fork() and exit():
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -65,12 +75,15 @@ int main() {
     }
     return 0;
 }
+```
+
 OUTPUT:
 
-image
+![image](https://github.com/user-attachments/assets/48d358fb-b079-4531-8719-3c06565b8268)
 
 C Program to execute Linux system commands using Linux API system calls exec() family:
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -98,9 +111,11 @@ int main() {
     }
     return 0;
 }
+```
+
 OUTPUT:
 
-image
+![image](https://github.com/user-attachments/assets/e86ea460-6867-43af-b0a6-d13d3e203472)
 
-RESULT:
+# RESULT:
 The programs are executed successfully.
